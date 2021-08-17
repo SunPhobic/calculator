@@ -1,0 +1,17 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "simple vanila js calculator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "vanilla",
+    "javascript",
+    "javascript"
+  ],
+  "author": "Sunphobic",
+  "license": "ISC"
+}

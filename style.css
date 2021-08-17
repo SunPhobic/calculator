@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Cabin', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategrey;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3142;
+    width: 40vw;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+#result{
+    display: block;
+    width: 94%;
+    height: 30px;
+    background-color: dark;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    background-color: #2d3142;
+    font-size: 1.4rem;
+    color:white;
+    border-radius: 5px;
+    max-width: 100%;
+}
+#container{
+    display: grid;
+    width: 100%;
+    background-color: #2d3142;
+    grid-template-areas:
+    'clear del round minus'
+    'seven eight nine plus'
+    'four five six div'
+    'one two three mult'
+    'zero period tenx equal';
+    border-radius: 5px;
+}
+
+
+
+.button{
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #4f5d75;
+    color:white;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button:active{
+    -webkit-box-shadow: inset 5px 5px 13px 5px rgba(0,0,0,0.25); 
+box-shadow: inset 5px 5px 13px 5px rgba(0,0,0,0.25);
+}
+
+.operation{
+    background-color: #ef8354;
+    font-size: 1.5rem;
+}
+
+#one{ grid-area: one;}
+#two{ grid-area: two;}
+#three{ grid-area: three;}
+#four{ grid-area: four;}
+#five{ grid-area: five;}
+#six{ grid-area: six;}
+#seven{ grid-area: seven;}
+#eight{ grid-area: eight;}
+#nine{ grid-area: nine;}
+#zero{ grid-area: zero;}
+#minus{ grid-area: minus;}
+#plus{ grid-area: plus;}
+#div{ grid-area: div;}
+#mult{ grid-area: mult;}
+#period{ grid-area: period;}
+#equal{ grid-area: equal; background-color: #bfc0c0;}
+#del{grid-area: del; background-color: #bfc0c0;}
+#clear{grid-area: clear; background-color: #bfc0c0;}
+#round{grid-area: round; background-color: #bfc0c0;}
+#tenx{grid-area: tenx}
+
+
+@media(max-width:900px){
+    main{
+        
+        width: 80vw;     
+    }
+}
+@media(max-width:400px){
+    main{
+        
+        width:100vw;     
+    }
+    .button{
+        padding: 1rem;
+        font-size: 5vw;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+}
